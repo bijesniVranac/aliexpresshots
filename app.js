@@ -1,5 +1,7 @@
 const express = require('express');
 const axios = require('axios');
+
+const port = process.env.PORT || 3000;
 //https://gw.api.alibaba.com/openapi/param2/2/portals.open/api.listHotProducts/75145?categoryId=[categoryId]
 var app = express();
 app.set("view engine", "ejs");
@@ -598,6 +600,6 @@ app.get("/weddings", function(req,res){
 });
 
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log("Server started...");
 });
