@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body style="background-color:  #e6f2ff">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            <p>Home</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container" style="padding-top: 70px">
+      <div class="jumbotron" style="background-color:  #fff7e6">
+        <h1>Sale Items</h1>
+      </div>
+      <div class ="row">
+        <div class="col-md-3">
+            <div class="list-group">
+              <list class="list-group-item"><a href="/apparel">Apparel & Accessories</a></list>
+              <list class="list-group-item"><a href="/automobiles">Automobiles & Motorcycles</a></list>
+              <list class="list-group-item"><a href="/beauty">Beauty & Health</a></list>
+              <list class="list-group-item"><a href="/computer">Computer & Office</a></list>
+              <list class="list-group-item"><a href="/conel">Consumer Electronics</a></list>
+              <list class="list-group-item"><a href="/eleq">Electrical Equipment & Supplies</a></list>
+              <list class="list-group-item"><a href="/elco">Electronic Components & Supplies</a></list>
+              <list class="list-group-item"><a href="/food">Food</a></list>
+              <list class="list-group-item"><a href="/furniture">Furniture</a></list>
+              <list class="list-group-item"><a href="/hair">Hair & Accessories</a></list>
+              <list class="list-group-item"><a href="/hardware">Hardware</a></list>
+              <list class="list-group-item"><a href="/homega">Home & Garden</a></list>
+              <list class="list-group-item"><a href="/homeap">Home Appliances</a></list>
+              <list class="list-group-item"><a href="/industry">Industry & Business</a></list>
+              <list class="list-group-item"><a href="/jewelry">Jewelry & Accessories</a></list>
+              <list class="list-group-item"><a href="/lights">Lights & Lighting</a></list>
+              <list class="list-group-item"><a href="/luggage">Luggage & Bags</a></list>
+              <list class="list-group-item"><a href="/mother">Mother & Kids</a></list>
+              <list class="list-group-item"><a href="/office">Office & School Supplies</a></list>
+              <list class="list-group-item"><a href="/phones">Phones & Telecommunications</a></list>
+              <list class="list-group-item"><a href="/security">Security & Protection</a></list>
+              <list class="list-group-item"><a href="/shoes">Shoes</a></list>
+              <list class="list-group-item"><a href="/sports">Sports & Entertainment</a></list>
+              <list class="list-group-item"><a href="/tools">Tools</a></list>
+              <list class="list-group-item"><a href="/toys">Toys & Hobbies</a></list>
+              <list class="list-group-item"><a href="/watches">Watches</a></list>
+              <list class="list-group-item"><a href="/weddings">Weddings & Events</a></list>
+            </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+             <% data.forEach(function(prod){ %>
+               <div class="col-md-4 col-sm-6">
+                   <div class="thumbnail">
+                       <img src="<%= prod.imageUrl %>">
+                       <div class="caption">
+                           <h4><%= prod.productTitle %></h4>
+                       </div>
+                       <p>Sale price: <strong><em><%= prod.salePrice %></em></strong></p>
+                       <p>
+                            <a href="<%= prod.productUrl %>" class="btn btn-primary">More Info</a>
+                       </p>
+                   </div>
+               </div>
+             <% }); %>
+          </div>
+        </div>
+        </div>
+  </body>
+</html>
