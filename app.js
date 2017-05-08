@@ -18,9 +18,9 @@ app.get("/", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title='Picked just for you!';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -39,9 +39,9 @@ app.get("/apparel", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Apparel & Accessories';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -61,9 +61,9 @@ app.get("/automobiles", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Automobiles & Motorcycles';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -82,9 +82,9 @@ app.get("/beauty", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Beauty & Health';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -103,9 +103,9 @@ app.get("/computer", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Computer & Office';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -124,9 +124,9 @@ app.get("/conel", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Consumer Electronics';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -145,9 +145,9 @@ app.get("/eleq", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Electrical Equipment & Supplies';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -166,9 +166,9 @@ app.get("/elco", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Electronic Components & Supplies';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -187,9 +187,9 @@ app.get("/food", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Food';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -208,9 +208,9 @@ app.get("/furniture", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Furniture';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -229,9 +229,9 @@ app.get("/hair", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Hair & Accessories';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -250,9 +250,9 @@ app.get("/hardware", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Hardware';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -271,9 +271,9 @@ app.get("/homega", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Home & Garden';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -292,9 +292,9 @@ app.get("/homeap", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Home Appliances';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -313,9 +313,9 @@ app.get("/industry", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Industry & Business';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -334,9 +334,9 @@ app.get("/jewelry", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Jewelry & Accessories';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -355,9 +355,9 @@ app.get("/lights", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Lights & Lighting';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -376,9 +376,9 @@ app.get("/luggage", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Luggage & Bags';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -397,9 +397,9 @@ app.get("/mother", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Mother & Kids';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -418,9 +418,9 @@ app.get("/office", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Office & School Supplies';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -439,9 +439,9 @@ app.get("/phones", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Phones & Telecommunications';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -460,9 +460,9 @@ app.get("/security", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Security & Protection';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -481,9 +481,9 @@ app.get("/shoes", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Shoes';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -502,9 +502,9 @@ app.get("/sports", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Sports & Entertainment';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -523,9 +523,9 @@ app.get("/tools", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Tools';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -544,9 +544,9 @@ app.get("/toys", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Toys & Hobbies';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -565,9 +565,9 @@ app.get("/watches", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Watches';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
@@ -586,9 +586,9 @@ app.get("/weddings", function(req,res){
     console.log('greska');
     res.render('badadd');
   }
-
+    var title ='Weddings & Events';
     var data= response.data.result.products;
-    res.render('index', {data:data});
+    res.render('index', {data:data, title:title});
 }).catch((e)=>{
   if (e.code === 'ENOTFOUND'){
     console.log('Unable to connect to API servers');
